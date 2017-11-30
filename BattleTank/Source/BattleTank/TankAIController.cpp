@@ -7,7 +7,7 @@ void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	auto PlayerTank = GetPlayerTank();
+	auto PlayerTank = GetPlayerTank(); 
 
 	if (!PlayerTank)
 	{
