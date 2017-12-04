@@ -16,9 +16,10 @@ class BATTLETANK_API ATankAIController : public AAIController
 	
 private: //public is planning to inherit from a class
 
-	ATank* GetAIControlledTank() const;
+	ATank* GetControlledTank() const;
 	ATank* GetPlayerTank() const;
 
 	virtual void BeginPlay() override;
+	virtual void Tick(float DeltaTime) override;
 	
 };
