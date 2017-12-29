@@ -16,5 +16,8 @@ private: //public is planning to inherit from a class
 
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditDefaultsOnly)
+	float AcceptanceRadius = 30.f;
 	
 };
